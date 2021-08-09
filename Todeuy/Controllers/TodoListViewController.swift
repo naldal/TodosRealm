@@ -45,7 +45,7 @@ class TodoListViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    // MARK:- Model Manuplation Methods
+    // MARK: Model Manuplation Methods
     
     func saveItems() {
         let encoder = PropertyListEncoder()
