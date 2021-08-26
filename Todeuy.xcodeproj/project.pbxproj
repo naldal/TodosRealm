@@ -15,9 +15,12 @@
 		DA9F4AFE26BAD97600B42598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9F4AFD26BAD97600B42598 /* Assets.xcassets */; };
 		DA9F4B0126BAD97600B42598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9F4AFF26BAD97600B42598 /* LaunchScreen.storyboard */; };
 		DACB9B4026C179E6005249D8 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACB9B3E26C179E6005249D8 /* DataModel.xcdatamodeld */; };
+		EAF39AF2BE6C1E85E138001F /* libPods-Todeuy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BBA4EE4BD76BFC055CFD62 /* libPods-Todeuy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75BBA4EE4BD76BFC055CFD62 /* libPods-Todeuy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Todeuy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9CA907C62449536AA55B369 /* Pods-Todeuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todeuy.release.xcconfig"; path = "Target Support Files/Pods-Todeuy/Pods-Todeuy.release.xcconfig"; sourceTree = "<group>"; };
 		DA29462E26D662160087704F /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		DA9F4AF126BAD97500B42598 /* Todeuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todeuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9F4AF426BAD97500B42598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		DA9F4B0026BAD97600B42598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA9F4B0226BAD97600B42598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DACB9B3F26C179E6005249D8 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		DCC729F05A29A623C4C55E5B /* Pods-Todeuy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todeuy.debug.xcconfig"; path = "Target Support Files/Pods-Todeuy/Pods-Todeuy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +39,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF39AF2BE6C1E85E138001F /* libPods-Todeuy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85F131ADCD74F359FE283B4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCC729F05A29A623C4C55E5B /* Pods-Todeuy.debug.xcconfig */,
+				B9CA907C62449536AA55B369 /* Pods-Todeuy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DA268B7326BBB8AF00E7B51D /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +95,8 @@
 			children = (
 				DA9F4AF326BAD97500B42598 /* Todeuy */,
 				DA9F4AF226BAD97500B42598 /* Products */,
+				85F131ADCD74F359FE283B4F /* Pods */,
+				F62BCF86572E1279D0FD1AAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +122,14 @@
 			path = Todeuy;
 			sourceTree = "<group>";
 		};
+		F62BCF86572E1279D0FD1AAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75BBA4EE4BD76BFC055CFD62 /* libPods-Todeuy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA9F4B0526BAD97600B42598 /* Build configuration list for PBXNativeTarget "Todeuy" */;
 			buildPhases = (
+				31C6D875FBA0F3EFFBAB3B34 /* [CP] Check Pods Manifest.lock */,
 				DA9F4AED26BAD97500B42598 /* Sources */,
 				DA9F4AEE26BAD97500B42598 /* Frameworks */,
 				DA9F4AEF26BAD97500B42598 /* Resources */,
@@ -169,6 +195,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31C6D875FBA0F3EFFBAB3B34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Todeuy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA9F4AED26BAD97500B42598 /* Sources */ = {
@@ -323,6 +374,7 @@
 		};
 		DA9F4B0626BAD97600B42598 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCC729F05A29A623C4C55E5B /* Pods-Todeuy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +394,7 @@
 		};
 		DA9F4B0726BAD97600B42598 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9CA907C62449536AA55B369 /* Pods-Todeuy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
