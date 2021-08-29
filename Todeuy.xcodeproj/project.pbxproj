@@ -14,10 +14,10 @@
 		DA9F4AFC26BAD97500B42598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9F4AFA26BAD97500B42598 /* Main.storyboard */; };
 		DA9F4AFE26BAD97600B42598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9F4AFD26BAD97600B42598 /* Assets.xcassets */; };
 		DA9F4B0126BAD97600B42598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9F4AFF26BAD97600B42598 /* LaunchScreen.storyboard */; };
-		DACB9B4026C179E6005249D8 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DACB9B3E26C179E6005249D8 /* DataModel.xcdatamodeld */; };
 		DAF9260326D78579001081B7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DAF9260226D78579001081B7 /* Realm */; };
 		DAF9260526D78579001081B7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAF9260426D78579001081B7 /* RealmSwift */; };
-		DAF9260726D79C59001081B7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9260626D79C59001081B7 /* Data.swift */; };
+		DAF9260926D7A016001081B7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9260826D7A016001081B7 /* Item.swift */; };
+		DAF9260B26D7A01D001081B7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9260A26D7A01D001081B7 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		DA9F4AFD26BAD97600B42598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9F4B0026BAD97600B42598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA9F4B0226BAD97600B42598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DACB9B3F26C179E6005249D8 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		DAF9260626D79C59001081B7 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DAF9260826D7A016001081B7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DAF9260A26D7A01D001081B7 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 		DA268B7326BBB8AF00E7B51D /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				DACB9B3E26C179E6005249D8 /* DataModel.xcdatamodeld */,
-				DAF9260626D79C59001081B7 /* Data.swift */,
+				DAF9260A26D7A01D001081B7 /* Category.swift */,
+				DAF9260826D7A016001081B7 /* Item.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -123,8 +123,8 @@
 			children = (
 				DA9F4AF426BAD97500B42598 /* AppDelegate.swift */,
 				DA9F4AF626BAD97500B42598 /* SceneDelegate.swift */,
-				DA268B7326BBB8AF00E7B51D /* DataModel */,
 				DA268B7526BBB94E00E7B51D /* Controllers */,
+				DA268B7326BBB8AF00E7B51D /* DataModel */,
 				DA268B7626BBB96900E7B51D /* Views */,
 				DA268B7426BBB90C00E7B51D /* Resources */,
 				DA9F4B0226BAD97600B42598 /* Info.plist */,
@@ -235,12 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DACB9B4026C179E6005249D8 /* DataModel.xcdatamodeld in Sources */,
-				DAF9260726D79C59001081B7 /* Data.swift in Sources */,
 				DA9F4AF926BAD97500B42598 /* TodoListViewController.swift in Sources */,
 				DA29462F26D662160087704F /* CategoryTableViewController.swift in Sources */,
 				DA9F4AF526BAD97500B42598 /* AppDelegate.swift in Sources */,
+				DAF9260926D7A016001081B7 /* Item.swift in Sources */,
 				DA9F4AF726BAD97500B42598 /* SceneDelegate.swift in Sources */,
+				DAF9260B26D7A01D001081B7 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,19 +468,6 @@
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		DACB9B3E26C179E6005249D8 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DACB9B3F26C179E6005249D8 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = DACB9B3F26C179E6005249D8 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DA9F4AE926BAD97500B42598 /* Project object */;
 }
